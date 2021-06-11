@@ -2,13 +2,19 @@
   "name": "api-reto",
   "version": "1.0.0",
   "description": "",
+  "author": "David Cruz Huertas",
   "dependencies": {
     "express": "^4.17.1",
     "serverless-http": "^2.7.0"
   },
+  "scripts": {
+    "start:dev": "sls offline start",
+    "start:prd": "sls deploy"
+  },
   "devDependencies": {
     "@koa/router": "^10.0.0",
     "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.0.0",
     "routing-controllers": "^0.9.0",
     "serverless-offline": "^7.0.0"
