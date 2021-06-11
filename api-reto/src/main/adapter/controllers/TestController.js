@@ -1,6 +1,6 @@
 'use strict';
 
 exports.testhola = async (ctx, next) => {
-    ctx.body = 'Hola';
+    ctx.body = { 'msj': 'Hola' };
     await next();
 }
