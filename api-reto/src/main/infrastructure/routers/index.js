@@ -6,6 +6,7 @@ const PlanetRoute = require('../routers/PlanetRoute');
 const SpecieRoute = require('../routers/SpecieRoute');
 const StarShipRoute = require('../routers/StarShipRoute');
 const VehicleRoute = require('../routers/VehicleRoute');
+const ProductRoute = require('../routers/ProductRoute');
 
 const Router = require('koa-router');
 const router = new Router({
@@ -18,5 +19,6 @@ router.use(PlanetRoute.routes(), PlanetRoute.allowedMethods());
 router.use(SpecieRoute.routes(), SpecieRoute.allowedMethods());
 router.use(StarShipRoute.routes(), StarShipRoute.allowedMethods());
 router.use(VehicleRoute.routes(), VehicleRoute.allowedMethods());
+router.use(ProductRoute.routes(), ProductRoute.allowedMethods());
 
 module.exports = router.routes();

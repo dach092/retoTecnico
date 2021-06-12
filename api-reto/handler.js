@@ -57,11 +57,4 @@ const app = require('./src/main/infrastructure/app');
 //   }
 // });
 
-// app.use((req, res, next) => {
-//   return res.status(404).json({
-//     error: "Not Found",
-//   });
-// });
-
-
 module.exports.handler = serverless(app.callback());
