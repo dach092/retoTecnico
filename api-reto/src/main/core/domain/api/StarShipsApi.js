@@ -3,9 +3,7 @@ const remoteConnection = require('../../../infrastructure/callapi');
 
 const apiStarShip = {
     getIdStarShip: async (id) => {
-        const url = String(`${process.env.GET_ID_STARSHIPS}${id}`);
-
-console.log(process.env);
+        const url = String(`${process.env.GET_ID_STARTSHIPS}${id}`);
 
         const response = await remoteConnection.get(url, {
             headers: {
